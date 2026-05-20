@@ -11,7 +11,7 @@ export default function ProductCard({ item, add }) {
       ref={ref}
       initial={{ opacity: 0, y: 50 }}
       animate={isInView ? { opacity: 1, y: 0 } : {}}
-      transition={{ duration: 0.4, ease: "easeOut" }}
+      transition={{ duration: 0.5, ease: "easeInOut" }}
       whileHover={{ scale: 1.05, y: -10 }}
       className='card'
     >

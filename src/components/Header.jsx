@@ -7,7 +7,7 @@ export default function Header() {
       <motion.div 
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.7, ease: "easeOut" }}
+        transition={{ duration: 0.8, ease: "easeInOut" }}
         className='hero-content'
       >
         <h1>Burger House</h1>

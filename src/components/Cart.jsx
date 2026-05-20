@@ -7,7 +7,7 @@ export default function Cart({ cart, add, remove, clearCart, total, totalItems, 
     <motion.div 
       initial={{ opacity: 0, x: 100 }}
       animate={{ opacity: 1, x: 0 }}
-      transition={{ duration: 0.4, ease: "easeOut" }}
+      transition={{ duration: 0.5, ease: "easeInOut" }}
       className={`cart ${isMinimized ? 'cart-minimized' : ''}`}
     >
       <div className='cart-head'>
@@ -29,7 +29,7 @@ export default function Cart({ cart, add, remove, clearCart, total, totalItems, 
             <motion.div 
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.3 }}
+              transition={{ duration: 0.3, ease: "easeInOut" }}
               className='cart-item' 
               key={index}
             >

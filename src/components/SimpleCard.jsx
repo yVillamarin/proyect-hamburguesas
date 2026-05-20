@@ -11,7 +11,7 @@ export default function SimpleCard({ item, add }) {
       ref={ref}
       initial={{ opacity: 0, x: -30 }}
       animate={isInView ? { opacity: 1, x: 0 } : {}}
-      transition={{ duration: 0.4, ease: "easeOut" }}
+      transition={{ duration: 0.5, ease: "easeInOut" }}
       whileHover={{ scale: 1.03, backgroundColor: '#2a2a2a' }}
       className='simple'
     >
